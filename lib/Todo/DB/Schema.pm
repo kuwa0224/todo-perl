@@ -8,9 +8,9 @@ use Teng::Schema::Declare;
 base_row_class 'Todo::DB::Row';
 
 table {
-    name 'member';
+    name 'todo_list';
     pk 'id';
-    columns qw(id name);
+    columns qw(id content created_at);
 };
 
 1;

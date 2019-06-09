@@ -26,7 +26,7 @@ my $app = builder {
 };
 unless (caller) {
     my $port        = 5000;
-    my $host        = IO::Interface::Simple->new('eth0')->address;
+    my $host        = IO::Interface::Simple->new('en0')->address;
     my $max_workers = 4;
 
     require Getopt::Long;
